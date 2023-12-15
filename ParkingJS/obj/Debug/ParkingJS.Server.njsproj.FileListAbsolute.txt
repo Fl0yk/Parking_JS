@@ -1,0 +1,3 @@
+C:\Users\kosac\Desktop\5_сем\WEB\ParkingJS\ParkingJS\obj\Debug\ParkingJS.Server.njsproj.AssemblyReference.cache
+C:\Users\kosac\Desktop\5_сем\WEB\ParkingJS\ParkingJS\obj\Debug\ParkingJS.Server.njsproj.CoreCompileInputs.cache
+C:\Users\kosac\Desktop\5_сем\WEB\ParkingJS\ParkingJS\bin\Microsoft.NodejsTools.WebRole.dll

@@ -1,0 +1,318 @@
+html, body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    padding-top: 40px;
+}
+
+html {
+    background: radial-gradient(rgb(240, 255, 255) 60%, rgb(95, 158, 160));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+form{
+    padding: 16px;
+    max-width: max-content;
+}
+
+main {
+    padding: 50px 0 0 0;
+    min-height: 85vh;
+    overflow: hidden;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+}
+
+p, h1, h2, h3, h4, h5, h6, summary {
+    text-indent: 30px;
+    line-height: normal;
+    font-variant-ligatures: common-ligatures;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    word-break: break-word;
+    position: static;
+    text-align: left;
+    padding-right: 5px;
+    z-index: 5;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+#lastnews {
+    width: 450px;
+}
+
+.round {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 100px;
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 10px 4px rgb(123, 104, 238);
+}
+
+p.news::selection {
+    color: aquamarine;
+}
+
+p.news::first-letter {
+    color: crimson;
+    font-size: 130%
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul.unicode > li::before {
+    content: "\20aa";
+}
+
+
+q[cite^="https"] {
+    color: green;
+}
+
+q:lang(en) {
+    quotes: "\201C" "\201D";
+}
+
+q:lang(fr) {
+    quotes: "\00AB" "\00BB";
+}
+
+
+a {
+    text-decoration: none;
+    color: darkturquoise;
+}
+
+a:hover, a:active {
+    color:darkslategrey;
+    cursor: pointer;
+}
+
+a[href$=".pdf"] {
+    font-size: 22px;
+    color: red;
+}
+
+input:enabled {
+    border: 2px solid green;
+}
+
+input:disabled {
+    background-color: slategrey;
+}
+
+input:required {
+    border: 2px solid black;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 4px solid rgb(0, 191, 255);
+}
+
+input:out-of-range {
+    color: darkred;
+}
+
+input[type="radio"]:checked:after,
+input[type="checkbox"]:checked:after {
+    padding: 0 0 0 20px;
+    font-size: 18px;
+    color: crimson;
+}
+
+div input {
+    margin: 6px;
+}
+
+input[type="text"], input[type="password"] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="submit"], button.sbm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-color: rgb(240, 255, 255);
+    color: rgb(34, 139, 34);
+    border: 2px solid rgb(50, 205, 50);
+    border-radius: 12px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 6px;
+}
+
+    input[type="submit"]:hover, button.sbm:hover {
+        background-color: rgb(50, 205, 50);
+        color: rgb(240, 255, 255);
+    }
+
+.message {
+    font-weight: 600;
+    color: blue;
+}
+
+nav.navbar {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    text-align: center;
+    background-color: lightslategray;
+    font-size: 1.2em;
+    color: white;
+    padding: 8px 5px;
+    width: 100%;
+}
+
+    nav.navbar a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+.navbar-brand {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-kerning: normal;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin: 10px;
+    display: inline;
+}
+
+nav.vertical {
+    width: 300px;
+    text-align: center;
+}
+
+nav.vertical a {
+    text-decoration: none;
+}
+
+nav.vertical li {
+    margin: 5px;
+    padding: 8px 5px 8px 5px;
+    background-color: cornsilk;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+
+description {
+    font-size: 18px;
+    color: azure;
+    margin-bottom: 10px;
+}
+
+summary {
+    font-size: 16px;
+    color: rgb(0, 0, 139);
+    margin-bottom: 5px;
+}
+
+summary:hover {
+    color: rgb(75, 0, 130);
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: aliceblue;
+    border: 5px inset gold;
+    margin: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: content;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.news-container {
+    columns: 300px 3;
+    column-gap: 10px;
+    padding: 30px 5px 8px 5px;
+}
+
+p.news-text {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+}
+
+article.one-news {
+    margin: 10px;
+    padding: 0px 5px 0px 10px;
+    width: 700px;
+    height: 180px;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+.parking-lot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.parking-place {
+    width: 80px;
+    height: 110px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.parking-place.empty {
+    background-color: #b2e0b2; /* Цвет для свободного места */
+}
+
+.parking-place.empty:hover {
+    background-color: #479E47;
+}
+
+.parking-place.occupied {
+    background-color: #f5bcbc; /* Цвет для занятого места */
+}
+
+.parking-place.occupied:hover {
+    background-color: #E66761;
+}
+
